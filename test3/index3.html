@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../test3/index3.css">
+    <script src="../test3/index3.js"></script>
+</head>
+<body>
+<div class="sticky-div">
+    <input class="notification" type="image" src="../res/Images/notifications.png" onclick="get_notification();" width="40" height="40" alt="Notifications">
+    <div class="bank-div">
+        <img src="../res/Images/bank1.jpeg" width="60" height="60" style="padding-right: 10px; border-radius: 500lh;">
+        <label> <strong>Natural Stupidity Bank</strong> </label>
+    </div>
+    <a href="../test2/about.html" class="about-page">Info Page</a>
+    <div style="float: right; font-size: 20px; color: white; display: flex; padding-inline: 20px; align-items: center; margin-left: 20px;">
+        <img src="../res/Images/icon1.png" width="50" height="50" style="">
+        <label id="username" style="padding-inline: 10px;">SriramSunderrajan</label>
+    </div>
+    <input type="image" src="../res/Images/logout1.png" onclick="logout();" width="100" height="60" alt="Logout" style="">
+</div>
+    <h2 style="border-top: 20px; margin-left: 40px; color: white">
+        Profile
+    </h2>
+    <table class="table">
+        <tr>
+            <td>Name</td> <td id="name"></td>
+        </tr>
+        <tr>
+            <td>Banking Name</td> <td id="banking_name"></td>
+        </tr>
+        <tr>
+            <td>Email</td> <td id="email"></td>
+        </tr>
+        <tr>
+            <td>Phone Number</td> <td id="phone"></td>
+        </tr>
+        <tr>
+            <td>Address</td> <td id="address"></td>
+        </tr>
+    </table>
+<br><br>
+
+<h2 style="margin-left: 40px; color: white">Transactions</h2>
+
+<label for="accounts" style="margin-left: 40px; color: white; font-size: 18px; margin-right: 10px;"> Choose an account:</label>
+<select class="select-class" name="accounts" id="accounts" style="width: fit-content;">
+    <option value="all">All</option>
+</select>
+
+<input type="button" class="button" id="account_button" value="Go to account" onclick="goto_account();" style="float: inherit; position: sticky; width: fit-content; margin-left: 60px;">
+
+<input type="button" class="button" id="manage_button" value="Manage your Accounts" onclick="manage_accounts();" style="float: inherit; position: sticky; width: fit-content; margin-left: 100px;">
+
+<div class="transaction-div" style="margin: 50px;">
+    <table id="transaction_table" class="transaction">
+        <thead>
+            <tr style="margin: 30px;">
+                <th>Date</th>
+                <th>Type</th>
+                <th>Your Account ID</th>
+                <th>Your Account Name</th>
+                <th>Other Account ID</th>
+                <th>Other Account Name</th>
+                <th>Amount transferred</th>
+                <th>Status</th>
+                <th>Recurring</th>
+            </tr>
+        </thead>
+        <tbody id="transaction_body">
+            <tr>
+                <td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

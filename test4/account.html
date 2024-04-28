@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Page</title>
+    <link rel="stylesheet" href="../test4/account.css">
+</head>
+
+<body>
+    <form id="transact-form" class="transaction-form"  onsubmit="return false;">
+        <fieldset id="login-form-fieldset">
+            <legend class="transact-legend">Transaction</legend>
+            <p id="welcome-text">Please enter the transaction details: </p>
+            <input class="textbox-input" id="receiver-account-id" type="text" name="receiver_account_id" placeholder="Enter the Account ID to send money to" required><br><br>
+            <input class="textbox-input" id="amount" type="number" name="amount" placeholder="Enter the amount to send" required><br><br>
+            <input class="textbox-input" id="password" type="password" name="password" placeholder="Password" style="margin-bottom: 10px;" required><br><br>
+            <label for="transaction_date_element" class="date-label">Schedule date of Transaction:</label><br>
+            <input class="textbox-input" id="transaction_date_element" style="margin-top: 5px;" type="date" name="date_of_transaction" required><br><br>
+            <input class="button" type="Submit" onclick="submit_transaction();" value="Send Money"><br>
+        </fieldset>
+    </form>
+<script src="../test4/account.js"></script>
+</body>
+</html>

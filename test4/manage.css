@@ -1,0 +1,94 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+table {
+    border-spacing: 30px;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.create-account-legend {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+body {
+    background-image: url("../res/Images/banking.avif");
+    background-size: cover;
+}
+
+
+.table {
+    margin-left: 30px;
+    font-size: 17px;
+    padding: 10px;
+    border-spacing: 30px 20px;
+    border-style: solid;
+    border-color: #95dee3;
+    backdrop-filter: blur(30px);
+    color: white;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th {
+    color: #d54872;
+}
+
+.account-form {
+    display: none;
+    background-color: #95dee390;
+    backdrop-filter: blur(20px);
+    margin: 40px;
+    padding: 30px;
+    border-radius: .40lh;
+}
+
+.button {
+    padding: 10px;
+    padding-inline: 15px;
+    margin-top: 20px;
+    border-radius: 2lh;
+    background-color: #193a38;
+    width: 120px;
+    color: white;
+    border: none;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+.textbox-input {
+    padding: 5px;
+    height: 1.25lh;
+    border-radius: .5lh;
+    border: none;
+    font-size: 14px;
+}
+
+.textbox-input:focus {
+    outline: none;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

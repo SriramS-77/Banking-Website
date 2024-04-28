@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Accounts Page</title>
+    <link rel="stylesheet" href="../test4/manage.css">
+</head>
+
+<body class="no-scrollbar">
+
+<input type="image" src="../res/Images/logout1.png" onclick="logout();" width="100" height="60" alt="Logout" style="float: right; position: sticky;">
+
+<h2 style="margin-top: 30px; color: white; margin-left: 10px;">Your Accounts: </h2>
+<div style="margin: 50px;">
+    <table id="account_table" class="table">
+        <thead>
+            <tr style="margin: 30px;">
+                <th>Account Name</th>
+                <th>Account ID</th>
+                <th>Account Type</th>
+                <th>Balance</th>
+                <th>Interest Rate</th>
+                <th>Minimum Balance</th>
+                <th>Date Created</th>
+            </tr>
+        </thead>
+        <tbody id="account_body">
+        </tbody>
+    </table>
+</div>
+<input id="create-hide-button" class="button" type="button" value="Create Account" onclick="click_create_hide_account_button();" style="margin-left: 10px; margin-right: 20px;">
+<input id="delete-hide-button" class="button" type="button" value="Delete Account" onclick="click_delete_hide_account_button();">
+    <form class="account-form" id="create-account-form"  onsubmit="return false;">
+        <fieldset id="create-account-form-fieldset">
+            <legend class="create-account-legend">Create an Account</legend>
+            <p id="welcome-text">Please enter the account details: </p>
+            <input class="textbox-input" type="text" name="account_name" placeholder="Enter the Account Name" required><br><br><br>
+            <label>Pick the Account Type:</label><br><br>
+            <label>Savings</label>
+            <input type="radio" name="account_type" value="Savings" checked><br>
+            <label>Funds</label>
+            <input type="radio" name="account_type" value="Funds"><br>
+            <label>Business</label>
+            <input type="radio" name="account_type" value="Business"><br>
+            <br><br>
+            <input class="textbox-input" type="number" name="balance" placeholder="Enter the amount to start account with" required><br><br>
+            <input class="button" type="Submit" onclick="create_account();" value="Create Account   "><br>
+        </fieldset>
+    </form>
+    <form class="account-form" id="delete-account-form"  onsubmit="return false;">
+        <fieldset id="delete-account-form-fieldset">
+            <legend class="create-account-legend">Delete an Account</legend>
+            <p id="delete-text">Please enter the account details: </p>
+            <input class="textbox-input" type="text" name="account_name" placeholder="Enter the Account Name" required><br><br>
+            <input class="textbox-input" type="text" name="account_id" placeholder="Enter the Account ID" required><br><br>
+            <input class="textbox-input" type="password" name="password" placeholder="Enter the Password" required><br><br>
+            <input class="button" type="Submit" onclick="delete_account();" value="Delete Account"><br>
+        </fieldset>
+    </form>
+</body>
+<script src="../test4/manage.js"></script>
+</html>

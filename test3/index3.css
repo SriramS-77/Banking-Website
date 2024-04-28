@@ -1,0 +1,148 @@
+div.relative {
+    position: relative;
+}
+
+div.right {
+    position: sticky;
+    right: initial;
+}
+
+.table {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-spacing: 30px 20px;
+    border-style: solid;
+    backdrop-filter: blur(30px);
+    color: white;
+    border-radius: 30px;
+}
+body{
+    font-family: Segoe UI;
+}
+
+table.table tr th, table.table tr td{
+    padding: 10px;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+table.transaction {
+    padding: 5px;
+    border-spacing: 30px;
+    border-collapse: collapse;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: #95dee390;
+    backdrop-filter: blur(3px);
+}
+
+table.transaction th, table.transaction td{
+    padding: 15px;
+    border-inline: 1px solid black;
+    border-collapse: collapse;
+    /* border-radius: 10px;*/
+}
+table.transaction tr {
+    border-bottom: 1px solid black;
+    border-radius: 25px;
+}
+table.transaction tr td:first-child, table.transaction tr th:first-child{
+    border-left-color: transparent;
+}
+table.transaction tr td:last-child, table.transaction tr th:last-child{
+    border-right-color: transparent;
+}
+table.transaction tr:last-child td:first-child {
+    border-bottom-left-radius: 25px;
+}
+table.transaction tr:last-child td:last-child {
+    border-bottom-right-radius: 25px;
+}
+
+tr.credit {
+    background-color: lightgreen;
+}
+
+tr.debit {
+    background-color: salmon;
+}
+
+.notification {
+    float: left;
+    position: sticky;
+    border-style: dashed;
+    border-radius: 25lh;
+    background-color: #41405b;
+    margin-left: 10px;
+    /*border-color: #6b0000;*/
+}
+
+body {
+    background-image: url("../res/Images/banking.avif");
+    background-size: cover;
+}
+
+.button {
+    padding: 10px;
+    padding-inline: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    border-radius: 2lh;
+    background-color: #193a38;
+    color: white;
+    border: none;
+}
+
+.select-class {
+    padding: 10px;
+    padding-inline: 15px;
+    margin-top: 20px;
+    border-radius: 2lh;
+    background-color: #032725;
+    color: white;
+    border: none;
+}
+
+.button:hover, .select-class:hover {
+    cursor: pointer;
+}
+
+.sticky-div {
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    /*background-color: rgba(24, 29, 27, 0.56);*/
+    background-color: rgba(15, 17, 17, 0.56);
+    backdrop-filter: blur(5px);
+    border-radius: .45lh;
+    display: flex;
+    align-items: center;
+}
+
+.bank-div {
+    color: white;
+    border: 3px solid transparent;
+    padding: 5px;
+    padding-inline: 15px;
+    margin-left: 35%;
+    font-family: 'Times New Roman';
+    font-size: large;
+    width: fit-content;
+    border-radius: .45lh;
+    display: flex;
+    align-items: center;
+}
+
+.about-page {
+    font-family: Segoe UI SemiBold;
+    font-size: 20px;
+    color: #6fbfff;
+    text-decoration: none;
+    position: relative;
+    margin-left: 15%;
+}
+.about-page:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../test2/index2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <form onsubmit="return false;" style="width: 400px; height: 300px; margin: auto; margin-top: 150px; margin-bottom: 100px; font-size: 30px;">
+        <fieldset class="login-fieldset" id="confirm">
+           <!-- <legend style="font-size: 40px; background-color: lightyellow; padding: 7px; border-radius: 25%; border-style: solid; border-color: lightgrey;"><i>Login</i></legend> -->
+    <div>
+        <div style="padding: 10px">
+                <i class="fa fa-user icon" style="padding: 5px;"></i>
+                <input class="textbox-input" type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div style="padding: 10px">
+                <i class="fa fa-key icon" style="padding: 2px;"></i>
+                <input class="textbox-input" type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <input class="button" type="button" value="Log In" onclick="verifyLogin();">
+            <input class="button" style="margin-left: 5px" type="button" value="Sign Up" onclick="signUp();"><br>
+
+            <div id="otp-div">
+                <label for="otp-input"> Enter the OTP: </label><br>
+                <input type="text" class="textbox-input otp-input" id="otp-input" name="otp-input" placeholder="* * * *"><br>
+                <input type="button" class="otp-button" id="otp-button" value="Submit OTP" onclick="verifyOTP();" style="margin-top: 20px;">
+            </div>
+    </div>
+        </fieldset>
+    </form>
+    <div id="recaptcha-container"></div>
+    <script type="module" src="../test2/index2.js"></script>
+</body>
+</html>

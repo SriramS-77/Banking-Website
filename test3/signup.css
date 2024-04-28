@@ -1,0 +1,57 @@
+i.icon {
+    font-size: 65%;
+}
+
+::placeholder {
+    font-family: "sans-serif" ;
+}
+
+body {
+    background-image: url("../res/Images/banking.avif");
+    background-size: cover;
+}
+
+.signup-form {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    background-color: rgba(43, 255, 223, 0.56);
+
+    backdrop-filter: blur(2.5px);
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    /*border: 40px solid transparent;  background-color: #95dee3;*/
+}
+
+.button {
+    padding: 7px;
+    padding-inline: 10px;
+    margin-top: 20px;
+    border-radius: 2lh;
+    background-color: #21d88b;
+    color: black;
+    font-weight: bold;
+    margin-right: 20px;
+    border-color: #b91f65;
+    width: 75px;
+    height: 35px;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.textbox-input {
+    padding: 5px;
+    height: 1.25lh;
+    border-radius: .5lh;
+    border: none;
+    font-size: 14px;
+}
+.textbox-input:focus {
+    outline: none;
+}

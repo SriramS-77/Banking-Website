@@ -1,0 +1,74 @@
+body {
+    background-image: url("../res/Images/banking.avif");
+    background-size: cover;
+}
+
+h2 {
+    color: #1c1a1a;
+    margin: auto;
+    padding: 10px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.info-div {
+    font-family: "Segoe UI";
+    font-size: large;
+    background-color: #e1471990; /* #95dee370 */
+    backdrop-filter: blur(20px);
+    color: #38ff00;
+    border-radius: 0.45lh;
+    width: fit-content;
+    padding: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    width: fit-content;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+    background-color: #21d88b80;
+    backdrop-filter: blur(30px);
+    border-radius: 0.75lh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+li a {
+  display: block;
+    margin-inline: 20px;
+}
+a:hover, li:hover {
+    cursor: pointer;
+}
+
+.anchor-link {
+    text-decoration: none;
+}
+.anchor-link:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+.anchor-link:link {
+    color: #620074;
+}
+.anchor-link:visited {
+    color: #ff0000;
+}

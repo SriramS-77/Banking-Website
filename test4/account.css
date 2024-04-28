@@ -1,0 +1,49 @@
+.textbox {
+    width: 300px;
+}
+
+.transact-legend {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#welcome-text, .date-label {
+    font-size: 20px;
+    color: #160138;
+}
+
+body {
+    background-image: url("../res/Images/banking.avif");
+    background-size: cover;
+}
+
+.transaction-form {
+    background-color: #95dee390;
+    backdrop-filter: blur(20px);
+    margin: 40px;
+    padding: 30px;
+    border-radius: .35lh;
+}
+
+.textbox-input {
+    width: 250px;
+    padding: 5px;
+    height: 1.25lh;
+    border-radius: .5lh;
+    border: none;
+    font-size: 14px;
+}
+
+.button {
+    padding: 10px;
+    padding-inline: 15px;
+    margin-top: 20px;
+    border-radius: 2lh;
+    background-color: #534e4e;
+    color: white;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}

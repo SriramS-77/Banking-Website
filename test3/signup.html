@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up for an Account</title>
+    <link rel="stylesheet" href="../test3/signup.css">
+</head>
+<body>
+<form autocomplete="on" onsubmit="return false;" class="signup-form">
+    <fieldset id="signup">
+        <legend style="font-size: 40px;"><i>Sign Up</i></legend>
+        <label for="name">Name:</label><br>
+        <input class="textbox-input" type="text" id="name"><br><br>
+        <label for="banking_name">Banking Name:</label><br>
+        <input class="textbox-input" type="text" id="banking_name"><br><br>
+        <label for="email">Email:</label><br>
+        <input class="textbox-input" type="email" id="email"><br><br>
+        <label for="phone">Phone Number:</label><br>
+        <input class="textbox-input" type="tel" id="phone"><br><br>
+        <label>Address:</label><br>
+        <input class="textbox-input" type="text" id="line_1" placeholder="Line 1 (Optional)">    <input class="textbox-input" type="text" id="line_2" placeholder="Line 2 (Optional)" style="margin-left: 10px;"><br>
+        <input class="textbox-input" type="text" id="street" placeholder="Street">    <input class="textbox-input" type="text" id="city" placeholder="City" style="margin-left: 10px;"><br>
+        <input class="textbox-input" type="text" id="state" placeholder="State">    <input class="textbox-input" type="text" id="pincode" placeholder="Pincode" style="margin-left: 10px;"><br><br>
+        <label for="dob">DoB:</label><br>
+        <input class="textbox-input" type="date" id="dob"><br><br>
+        <label for="username">Username:</label><br>
+        <input class="textbox-input" type="text" id="username" placeholder="Username"><br><br>
+        <label for="password">Password:</label><br>
+        <input class="textbox-input" type="password" id="password" placeholder="Password"><br><br>
+
+        <input type="button" class="button" value="Sign Up" onclick="verifySignup();">
+        <input type="button" class="button" value="Back" onclick="window.location.href = '../test2/index2.html';">
+    </fieldset>
+</form>
+<script src="../test3/signup.js"></script>
+</body>
+</html>
